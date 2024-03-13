@@ -1,0 +1,18 @@
+<script type="text/jsx">
+  const container = document.getElementById("root");
+  const root = React.DOM.createRoot(container);
+
+  function Header(props) {
+    return(<h1> Belajar React Bersama {props.text} </h1>);
+  }
+
+    function HomePage() {
+      return(
+        <div>
+          <Header text="Kamu"/>
+          <Header text="Mahasiswa"/>
+        </div>
+      )
+    }
+  root.render(<HomePage />);
+</script>
